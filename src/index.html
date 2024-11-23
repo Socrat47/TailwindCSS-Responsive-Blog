@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Roboto+Serif:ital,opsz,wght@0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;1,8..144,400;1,8..144,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="text-gray-600 font-poppins">
+    <nav class="bg-slate-300 shadow-sm shadow-slate-600 flex items-center">
+        <div class="container mx-auto px-4 py-3 flex items-center">
+            <a href="blog.html" class="text-2xl drop-shadow-xl hover:text-gray-900 transition duration-500">LOGO</a>
+
+            <div class="ml-12 flex gap-3 invisible xl:visible">
+                <a href="#" class="flex items-center justify-center gap-2
+                hover:text-gray-900 transition duration-500">
+                    <i class="fa-solid fa-house"></i>
+                    Home
+                </a>
+
+                <a href="#" class="flex items-center gap-2 hover:text-gray-900 transition duration-500">
+                    <i class="fa-solid fa-address-book"></i>
+                    Contact
+                </a>
+
+                <a href="#" class="flex items-center gap-2 hover:text-gray-900 transition duration-500">
+                    <i class="fa-solid fa-address-card"></i>
+                    About
+                </a>
+            </div>
+
+            <div
+                class="relative ml-auto flex items-center justify-center gap-2 bg-slate-100 h-8 rounded-md shadow-md shadow-slate-600 invisible xl:visible">
+                <span class="ml-2">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+                <input class="bg-slate-100 outline-none w-48 p-1 rounded-md" type="text" placeholder="Search...">
+            </div>
+
+            <div
+                class="xl:ml-5 flex items-center gap-2 hover:text-gray-900 cursor-pointer transition duration-500 absolute xl:relative xl:left-5 right-5">
+                <span class="text-2xl drop-shadow-md"><i class="fa-solid fa-right-to-bracket"></i></span>
+                Çıkış
+
+                <div
+                    class="ml-5 text-2xl hover:text-gray-900 cursor-pointer transition duration-500 xl:invisible sm:text-3xl">
+                    <button class="btn" id="open_sidebar">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="py-12 bg-gray-200">
+        <div class="container mx-auto px-4 flex flex-wrap">
+            <div class="w-full md:w-3/12 lg:w-3/12 xl:w-3/12">
+                <div class="bg-white shadow-xl shadow-gray-500 rounded-xl p-4 mr-4">
+                    <h3 class="text-xl font-semibold text-gray-800 font-roboto">
+                        Categories
+                    </h3>
+
+                    <div class="text-gray-500 space-y-2 mt-4">
+                        <a href="#"
+                            class="flex gap-2 items-center font-semibold hover:text-gray-900 transition duration-500">
+                            <span>
+                                <i class="fa-solid fa-folder"></i>
+                            </span>
+                            <span>
+                                Food
+                            </span>
+                            <span class="">(10)</span>
+                        </a>
+
+                        <a href="#"
+                            class="flex gap-2 items-center font-semibold hover:text-gray-900 transition duration-500">
+                            <span>
+                                <i class="fa-solid fa-folder"></i>
+                            </span>
+                            <span>
+                                People
+                            </span>
+                            <span class="">(4)</span>
+                        </a>
+
+                        <a href="#"
+                            class="flex gap-2 items-center font-semibold hover:text-gray-900 transition duration-500">
+                            <span>
+                                <i class="fa-solid fa-folder"></i>
+                            </span>
+                            <span>
+                                Technology
+                            </span>
+                            <span class="">(14)</span>
+                        </a>
+
+                        <a href="#"
+                            class="flex gap-2 items-center font-semibold hover:text-gray-900 transition duration-500">
+                            <span>
+                                <i class="fa-solid fa-folder"></i>
+                            </span>
+                            <span>
+                                Fashion
+                            </span>
+                            <span class="">(3)</span>
+                        </a>
+
+                        <a href="#"
+                            class="flex gap-2 items-center font-semibold hover:text-gray-900 transition duration-500">
+                            <span>
+                                <i class="fa-solid fa-folder"></i>
+                            </span>
+                            <span>
+                                Music
+                            </span>
+                            <span class="">(5)</span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-xl shadow-gray-500 rounded-xl p-4 mr-4 mt-4 ">
+                    <h3 class="text-xl font-semibold text-gray-800 font-roboto">
+                        Random Post
+                    </h3>
+
+                    <div class="mt-4 flex flex-col gap-3">
+                        <a href="#" class="flex group">
+                            <div class="flex shrink-0 group-hover:">
+                                <img src="img/python.jpg"
+                                    class="w-28 h-16 rounded object-cover group-hover:brightness-50 transition duration-500 hover:scale-110">
+                            </div>
+
+                            <div class="flex pl-3 flex-col gap-2">
+                                <h5
+                                    class="text-sm block font-roboto font-semibold group-hover:text-gray-900 transition duration-500">
+                                    Lorem
+                                    ipsum dolor sit amet.</h5>
+                                <span class="flex items-center gap-1 text-xs text-gray-500">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <span class=""> 23/11/2024 | 2000</span>
+                                </span>
+                            </div>
+                        </a>
+
+                        <a href="#" class="flex group">
+                            <div class="flex shrink-0 group-hover:">
+                                <img src="img/csharp.jpg"
+                                    class="w-28 h-16 rounded object-cover group-hover:brightness-50 transition duration-500 hover:scale-110">
+                            </div>
+
+                            <div class="flex pl-3 flex-col gap-2">
+                                <h5
+                                    class="text-sm block font-roboto font-semibold group-hover:text-gray-900 transition duration-500">
+                                    Lorem
+                                    ipsum dolor sit amet.</h5>
+                                <span class="flex items-center gap-1 text-xs text-gray-500">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <span class=""> 23/11/2024 | 2000</span>
+                                </span>
+                            </div>
+                        </a>
+
+                        <a href="#" class="flex group">
+                            <div class="flex shrink-0 group-hover:">
+                                <img src="img/nodejs.jpg"
+                                    class="w-28 h-16 rounded object-cover group-hover:brightness-50 transition duration-500 hover:scale-110">
+                            </div>
+
+                            <div class="flex pl-3 flex-col gap-2">
+                                <h5
+                                    class="text-sm block font-roboto font-semibold group-hover:text-gray-900 transition duration-500">
+                                    Lorem
+                                    ipsum dolor sit amet.</h5>
+                                <span class="flex items-center gap-1 text-xs text-gray-500">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <span class=""> 23/11/2024 | 2000</span>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="w-full md:w-6/12 lg:w-6/12 xl:w-6/12">
+                <div
+                    class="flex bg-white shadow-xl rounded-xl shadow-gray-500 px-4 mr-4 py-3 justify-between items-center mt-5 xl:mt-0 lg:mt-0 md:mt-0">
+                    <h3 class="text-base uppercase font-semibold font-roboto">Business</h3>
+                    <a href="blog.html"
+                        class="text-gray-500 py-1 px-3 rounded-xl bg-gray-800 border border-rose-950 hover:text-white transition duration-500">See
+                        more...</a>
+                </div>
+
+                <div class="rounded-xl bg-white overflow-hidden shadow-sm mr-4 mt-5">
+                    <a href="blog.html" class="block rounded-xl overflow-hidden">
+                        <img src="img/csharp.jpg"
+                            class="w-full h-96 object-cover transform hover:scale-110 transition duration-500">
+                    </a>
+
+                    <div class="p-4 pb-5">
+                        <a href="blog.html">
+                            <h3 class="block text-2xl font-semibold font-roboto text-gray-600 hover:text-gray-900">Lorem
+                                ipsum dolor sit,
+                                amet consectetur
+                                adipisicing
+                                elit. Quidem,
+                                ullam!</h3>
+                        </a>
+                        <p class="text-gray-500 text-sm mt-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam veniam officiis velit rem
+                            voluptatibus in tempora debitis ut eaque perferendis, sunt, hic quae placeat inventore odit
+                            repellendus amet voluptates.
+                        </p>
+
+                        <div class="mt-3 flex xl:space-x-4 lg:space-x-4 flex-wrap">
+                            <div class="flex text-gray-400 text-sm items-center gap-2">
+                                <span>
+                                    <i class="fa-solid fa-user"></i>
+                                </span>
+                                Administrator
+                            </div>
+
+                            <div class="flex text-gray-400 text-sm items-center gap-2">
+                                <span>
+                                    <i class="fa-solid fa-clock"></i>
+                                </span>
+                                23/11/2024
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 mt-4 ml-2">
+                    <div class="rounded-xl bg-white overflow-hidden shadow-sm mr-4 mt-5 p-4">
+                        <a href="#" class="block rounded-xl overflow-hidden">
+                            <img src="img/java.webp"
+                                class="w-full h-96 object-cover transform hover:scale-110 transition duration-500">
+                        </a>
+
+                        <div class="p-4 pb-5">
+                            <a href="#">
+                                <h3 class="block text-2xl font-semibold font-roboto text-gray-600 hover:text-gray-900">
+                                    Lorem
+                                    ipsum dolor sit,
+                                    amet consectetur
+                                    adipisicing
+                                    elit. Quidem,
+                                    ullam!</h3>
+                            </a>
+                            <p class="text-gray-500 text-sm mt-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam veniam officiis velit
+                                rem
+                                voluptatibus in tempora debitis ut eaque perferendis, sunt, hic quae placeat inventore
+                                odit
+                                repellendus amet voluptates.
+                            </p>
+
+                            <div class="mt-3 flex xl:space-x-4 lg:space-x-4 flex-wrap">
+                                <div class="flex text-gray-400 text-sm items-center gap-2">
+                                    <span>
+                                        <i class="fa-solid fa-user"></i>
+                                    </span>
+                                    Administrator
+                                </div>
+
+                                <div class="flex text-gray-400 text-sm items-center gap-2">
+                                    <span>
+                                        <i class="fa-solid fa-clock"></i>
+                                    </span>
+                                    23/11/2024
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded-xl bg-white overflow-hidden shadow-sm mr-4 mt-5 p-4">
+                        <a href="#" class="block rounded-xl overflow-hidden">
+                            <img src="img/react.png"
+                                class="w-full h-96 object-cover transform hover:scale-110 transition duration-500">
+                        </a>
+
+                        <div class="p-4 pb-5">
+                            <a href="#">
+                                <h3 class="block text-2xl font-semibold font-roboto text-gray-600 hover:text-gray-900">
+                                    Lorem
+                                    ipsum dolor sit,
+                                    amet consectetur
+                                    adipisicing
+                                    elit. Quidem,
+                                    ullam!</h3>
+                            </a>
+                            <p class="text-gray-500 text-sm mt-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam veniam officiis velit
+                                rem
+                                voluptatibus in tempora debitis ut eaque perferendis, sunt, hic quae placeat inventore
+                                odit
+                                repellendus amet voluptates.
+                            </p>
+
+                            <div class="mt-3 flex xl:space-x-4 lg:space-x-4 flex-wrap">
+                                <div class="flex text-gray-400 text-sm items-center gap-2">
+                                    <span>
+                                        <i class="fa-solid fa-user"></i>
+                                    </span>
+                                    Administrator
+                                </div>
+
+                                <div class="flex text-gray-400 text-sm items-center gap-2">
+                                    <span>
+                                        <i class="fa-solid fa-clock"></i>
+                                    </span>
+                                    23/11/2024
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded-xl bg-white overflow-hidden shadow-sm mr-4 mt-5 p-4">
+                        <a href="#" class="block rounded-xl overflow-hidden">
+                            <img src="img/flutter.png"
+                                class="w-full h-96 object-cover transform hover:scale-110 transition duration-500">
+                        </a>
+
+                        <div class="p-4 pb-5">
+                            <a href="#">
+                                <h3 class="block text-2xl font-semibold font-roboto text-gray-600 hover:text-gray-900">
+                                    Lorem
+                                    ipsum dolor sit,
+                                    amet consectetur
+                                    adipisicing
+                                    elit. Quidem,
+                                    ullam!</h3>
+                            </a>
+                            <p class="text-gray-500 text-sm mt-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam veniam officiis velit
+                                rem
+                                voluptatibus in tempora debitis ut eaque perferendis, sunt, hic quae placeat inventore
+                                odit
+                                repellendus amet voluptates.
+                            </p>
+
+                            <div class="mt-3 flex xl:space-x-4 lg:space-x-4 flex-wrap">
+                                <div class="flex text-gray-400 text-sm items-center gap-2">
+                                    <span>
+                                        <i class="fa-solid fa-user"></i>
+                                    </span>
+                                    Administrator
+                                </div>
+
+                                <div class="flex text-gray-400 text-sm items-center gap-2">
+                                    <span>
+                                        <i class="fa-solid fa-clock"></i>
+                                    </span>
+                                    23/11/2024
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded-xl bg-white overflow-hidden shadow-sm mr-4 mt-5 p-4">
+                        <a href="#" class="block rounded-xl overflow-hidden">
+                            <img src="img/kotlin.jpg"
+                                class="w-full h-96 object-cover transform hover:scale-110 transition duration-500">
+                        </a>
+
+                        <div class="p-4 pb-5">
+                            <a href="#">
+                                <h3 class="block text-2xl font-semibold font-roboto text-gray-600 hover:text-gray-900">
+                                    Lorem
+                                    ipsum dolor sit,
+                                    amet consectetur
+                                    adipisicing
+                                    elit. Quidem,
+                                    ullam!</h3>
+                            </a>
+                            <p class="text-gray-500 text-sm mt-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam veniam officiis velit
+                                rem
+                                voluptatibus in tempora debitis ut eaque perferendis, sunt, hic quae placeat inventore
+                                odit
+                                repellendus amet voluptates.
+                            </p>
+                            <div class="mt-3 flex xl:space-x-4 lg:space-x-4 flex-wrap">
+                                <div class="flex text-gray-400 text-sm items-center gap-2">
+                                    <span>
+                                        <i class="fa-solid fa-user"></i>
+                                    </span>
+                                    Administrator
+                                </div>
+
+                                <div class="flex text-gray-400 text-sm items-center gap-2">
+                                    <span>
+                                        <i class="fa-solid fa-clock"></i>
+                                    </span>
+                                    23/11/2024
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full md:w-3/12 lg:w-3/12 xl:w-3/12 md:mt-0 lg:mt-0 xl:mt-0 mt-5">
+                <div class="bg-white shadow-sm rounded-xl p-4">
+                    <h3 class="text-xl font-semibold text-gray-700 font-roboto">Social Media</h3>
+
+                    <div class="flex mt-4 gap-2 items-center">
+                        <a href="#" class="text-3xl text-blue-600 hover:text-blue-500">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+
+                        <a href="#" class="text-3xl text-blue-500 hover:text-blue-600">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+
+                        <a href="#" class="text-3xl text-red-500 hover:text-red-400">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" class="text-3xl text-red-500 hover:text-red-400">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                        <a href="#" class="text-3xl text-blue-500 hover:text-blue-400">
+                            <i class="fa-brands fa-discord"></i>
+                        </a>
+
+                        <a href="#" class="text-3xl text-blue-500 hover:text-blue-400">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+
+                        <a href="#" class="text-3xl text-black hover:text-gray-800">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white w-full shadow-xl shadow-gray-500 rounded-xl p-4 mr-4 mt-4">
+                    <h3 class="text-xl font-semibold text-gray-800 font-roboto ">
+                        Popular Post
+                    </h3>
+
+                    <div class="mt-4 flex flex-col gap-3">
+                        <a href="#" class="flex group">
+                            <div class="flex shrink-0 group-hover:">
+                                <img src="img/python.jpg"
+                                    class="w-28 h-16 rounded object-cover group-hover:brightness-50 transition duration-500 hover:scale-110">
+                            </div>
+
+                            <div class="flex pl-3 flex-col gap-2">
+                                <h5
+                                    class="text-sm block font-roboto font-semibold group-hover:text-gray-900 transition duration-500">
+                                    Lorem
+                                    ipsum dolor sit amet.</h5>
+                                <span class="flex items-center gap-1 text-xs text-gray-500">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <span class=""> 23/11/2024 | 2000</span>
+                                </span>
+                            </div>
+                        </a>
+
+                        <a href="#" class="flex group">
+                            <div class="flex shrink-0 group-hover:">
+                                <img src="img/csharp.jpg"
+                                    class="w-28 h-16 rounded object-cover group-hover:brightness-50 transition duration-500 hover:scale-110">
+                            </div>
+
+                            <div class="flex pl-3 flex-col gap-2">
+                                <h5
+                                    class="text-sm block font-roboto font-semibold group-hover:text-gray-900 transition duration-500">
+                                    Lorem
+                                    ipsum dolor sit amet.</h5>
+                                <span class="flex items-center gap-1 text-xs text-gray-500">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <span class=""> 23/11/2024 | 2000</span>
+                                </span>
+                            </div>
+                        </a>
+
+                        <a href="#" class="flex group">
+                            <div class="flex shrink-0 group-hover:">
+                                <img src="img/nodejs.jpg"
+                                    class="w-28 h-16 rounded object-cover group-hover:brightness-50 transition duration-500 hover:scale-110">
+                            </div>
+
+                            <div class="flex pl-3 flex-col gap-2">
+                                <h5
+                                    class="text-sm block font-roboto font-semibold group-hover:text-gray-900 transition duration-500">
+                                    Lorem
+                                    ipsum dolor sit amet.</h5>
+                                <span class="flex items-center gap-1 text-xs text-gray-500">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <span class=""> 23/11/2024 | 2000</span>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white w-full shadow-xl shadow-gray-500 rounded-xl p-4 mr-4 mt-4">
+                    <h3 class="text-xl font-semibold text-gray-700 font-roboto">
+                        Tags
+                    </h3>
+                    <div class="mt-2 flex items-center gap-2 text-sm flex-wrap">
+                        <a href="#" class="border border-gray-400 text-gray-700 p-2 shadow-xl rounded-xl hover:bg-blue-300
+                        ">
+                            PYTHON
+                        </a>
+
+                        <a href="#" class="border border-gray-400 text-gray-700 p-2 shadow-xl rounded-xl hover:bg-blue-300 
+                        ">
+                            JAVA
+                        </a>
+
+                        <a href="#" class="border border-gray-400 text-gray-700 p-2 shadow-xl rounded-xl hover:bg-blue-300 
+                        ">
+                            C#
+                        </a>
+
+                        <a href="#" class="border border-gray-400 text-gray-700 p-2 shadow-xl rounded-xl hover:bg-blue-300 
+                        ">
+                            JS
+                        </a>
+
+                        <a href="#" class="border border-gray-400 text-gray-700 p-2 shadow-xl rounded-xl hover:bg-blue-300 
+                        ">
+                            PHP
+                        </a>
+
+                        <a href="#" class="border border-gray-400 text-gray-700 p-2 shadow-xl rounded-xl hover:bg-blue-300 
+                        ">
+                            DART
+                        </a>
+
+                        <a href="#" class="border border-gray-400 text-gray-700 p-2 shadow-xl rounded-xl hover:bg-blue-300 
+                        ">
+                            GO
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fixed w-full h-full bg-black bg-opacity-25 left-0 top-0 opacity-0 invisible transition-all duration-500 xl:hidden"
+                id="sidebar_wrapper">
+
+                <div class="fixed top-0 w-72 h-full bg-white shadow-sm flex flex-col transition-all duration-500"
+                    id="sidebar">
+
+                    <div class="lg:hidden">
+                        <div class="relative mx-3 mt-1 shadow-sm">
+                            <span class="absolute left-3 top-0 text-sm text-gray-600">
+
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                            <input type="text" placeholder="Search..."
+                                class="block w-full rounded-3xl pl-9 pr-2 focus:outline-none bg-gray-200 text-sm text-gray-600 shadow-sm shadow-slate-300 ">
+
+
+
+                        </div>
+                        <div class="font-roboto">
+                            <a href="blog.html"
+                                class="flex px-4 py-1 mt-3 items-center text-xl hover:text-gray-900 transition ">
+                                <span class="mr-2"> <i class="fa-solid fa-house"></i> </span>
+                                Home
+                            </a>
+                        </div>
+                        <div class="font-roboto">
+                            <a href="blog.html"
+                                class="flex px-4 py-1 mt-3 items-center text-xl hover:text-gray-900 transition ">
+                                <span class="mr-2"> <i class="fa-solid fa-address-book"></i> </span>
+                                About
+                            </a>
+                        </div>
+                        <div class="font-roboto">
+                            <a href="blog.html"
+                                class="flex px-4 py-1 mt-3 items-center text-xl hover:text-gray-900 transition ">
+                                <span class="mr-2"> <i class="fa-solid fa-address-card"></i> </span>
+                                Contact
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="border-t py-4 bg-red-400 flex items-center justify-center mt-10">
+            <p class="">Copyright 2024 <span
+                    class="text-gray-800 hover:text-cyan-50 cursor-pointer transition duration-500">Socrat
+                    Arvis</span></p>
+        </footer>
+</body>
+
+<script>
+    document.querySelector('#open_sidebar').addEventListener('click', function () {
+        document.querySelector('#sidebar').classList.remove('-left-80')
+        document.querySelector('#sidebar').classList.add('left-0')
+        document.querySelector('#sidebar_wrapper').classList.remove('opacity-0')
+        document.querySelector('#sidebar_wrapper').classList.remove('invisible')
+
+    })
+
+    document.body.addEventListener('click', function (e) {
+        if (e.target.id === 'sidebar_wrapper') {
+
+            document.querySelector('#sidebar').classList.add('-left-80')
+            document.querySelector('#sidebar').classList.remove('left-0')
+            document.querySelector('#sidebar_wrapper').classList.add('opacity-0')
+            document.querySelector('#sidebar_wrapper').classList.add('invisible')
+        }
+
+    })
+
+</script>
+
+</html>
